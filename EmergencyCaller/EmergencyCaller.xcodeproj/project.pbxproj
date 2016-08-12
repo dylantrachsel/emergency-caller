@@ -14,6 +14,7 @@
 		869ABD001D5D4C5000783E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869ABCFE1D5D4C5000783E58 /* LaunchScreen.storyboard */; };
 		869ABD0B1D5D4C5100783E58 /* EmergencyCallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ABD0A1D5D4C5100783E58 /* EmergencyCallerTests.swift */; };
 		869ABD161D5D4C5100783E58 /* EmergencyCallerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ABD151D5D4C5100783E58 /* EmergencyCallerUITests.swift */; };
+		869ABD241D5D512800783E58 /* ServerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ABD231D5D512800783E58 /* ServerInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		869ABD111D5D4C5100783E58 /* EmergencyCallerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmergencyCallerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869ABD151D5D4C5100783E58 /* EmergencyCallerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCallerUITests.swift; sourceTree = "<group>"; };
 		869ABD171D5D4C5100783E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		869ABD231D5D512800783E58 /* ServerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				869ABCFC1D5D4C5000783E58 /* Assets.xcassets */,
 				869ABCFE1D5D4C5000783E58 /* LaunchScreen.storyboard */,
 				869ABD011D5D4C5000783E58 /* Info.plist */,
+				869ABD231D5D512800783E58 /* ServerInterface.swift */,
 			);
 			path = EmergencyCaller;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869ABD241D5D512800783E58 /* ServerInterface.swift in Sources */,
 				869ABCF81D5D4C5000783E58 /* ViewController.swift in Sources */,
 				869ABCF61D5D4C5000783E58 /* AppDelegate.swift in Sources */,
 			);

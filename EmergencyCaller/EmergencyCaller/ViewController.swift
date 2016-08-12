@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var textButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // MARK: IBAction Methods
+    @IBAction func callPressed(sender: UIButton) {
+    }
+    
+    @IBAction func textPressed(sender: UIButton) {
+    }
 }
 
