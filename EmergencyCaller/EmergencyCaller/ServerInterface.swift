@@ -7,3 +7,50 @@
 //
 
 import Foundation
+
+class ServerInterface {
+    var dataTask: NSURLSessionDataTask?
+    
+    func callRequest() {
+        
+        let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        
+        let url = Constants.callURL
+        
+        dataTask = defaultSession.dataTaskWithURL(url!) {
+            data, response, error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            else if let httpResponse = response as? NSHTTPURLResponse {
+                if httpResponse.statusCode == 200 {
+                    // PARSE RESPONSE
+                }
+            }
+        }
+        
+        dataTask?.resume()
+    }
+    
+    func textRequest() {
+        let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        
+        let url = Constants.textURL
+        
+        dataTask = defaultSession.dataTaskWithURL(url!) {
+            data, response, error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            else if let httpResponse = response as? NSHTTPURLResponse {
+                if httpResponse.statusCode == 200 {
+                    // PARSE RESPONSE
+                }
+            }
+        }
+        
+        dataTask?.resume()
+    }
+}
