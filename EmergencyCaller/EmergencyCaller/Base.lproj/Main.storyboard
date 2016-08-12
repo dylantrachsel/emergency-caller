@@ -15,38 +15,58 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlj-Eq-uQf">
-                                <rect key="frame" x="93" y="340" width="188" height="87"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Emergency Text"/>
-                                <connections>
-                                    <action selector="textPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgq-Bf-oa1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-gN-37Y">
-                                <rect key="frame" x="89" y="216" width="197" height="88"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-gN-37Y">
+                                <rect key="frame" x="62" y="183" width="197" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="iCy-hD-THX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Emergency Call"/>
                                 <connections>
                                     <action selector="callPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8lD-lT-gmZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlj-Eq-uQf">
+                                <rect key="frame" x="66" y="289" width="188" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Emergency Text"/>
+                                <connections>
+                                    <action selector="textPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgq-Bf-oa1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hlv-gN-37Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="6lZ-Q3-xE8"/>
+                            <constraint firstItem="hlv-gN-37Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76n-VE-eCN"/>
+                            <constraint firstItem="hlv-gN-37Y" firstAttribute="centerX" secondItem="jlj-Eq-uQf" secondAttribute="centerX" id="Dqe-QJ-mMP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jlj-Eq-uQf" secondAttribute="trailing" constant="74" id="Gei-e2-acb"/>
+                            <constraint firstItem="jlj-Eq-uQf" firstAttribute="top" secondItem="hlv-gN-37Y" secondAttribute="bottom" constant="18" id="NEK-Sb-iSs"/>
+                            <constraint firstItem="hlv-gN-37Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="QbA-wB-sbU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jlj-Eq-uQf" secondAttribute="bottom" constant="192" id="Tg9-TC-Le2"/>
+                            <constraint firstItem="jlj-Eq-uQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="Xcb-c2-pVh"/>
                             <constraint firstItem="hlv-gN-37Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="196" id="bXt-NY-iY0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jlj-Eq-uQf" secondAttribute="trailing" constant="46" id="fFd-fS-DK7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hlv-gN-37Y" secondAttribute="trailing" constant="69" id="gfS-5A-Nby"/>
                             <constraint firstItem="jlj-Eq-uQf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="h9a-hY-pe6"/>
                             <constraint firstItem="jlj-Eq-uQf" firstAttribute="top" secondItem="hlv-gN-37Y" secondAttribute="bottom" constant="36" id="n8L-bT-SCS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jlj-Eq-uQf" secondAttribute="bottom" constant="240" id="n9Z-F2-CYU"/>
+                            <constraint firstItem="hlv-gN-37Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="pnW-kA-3Dh"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6lZ-Q3-xE8"/>
+                                <exclude reference="bXt-NY-iY0"/>
+                                <exclude reference="gfS-5A-Nby"/>
+                                <exclude reference="Gei-e2-acb"/>
+                                <exclude reference="h9a-hY-pe6"/>
+                                <exclude reference="n8L-bT-SCS"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="callButton" destination="hlv-gN-37Y" id="Mmg-yu-lmk"/>
                         <outlet property="textButton" destination="jlj-Eq-uQf" id="5Gi-Y0-gBa"/>
