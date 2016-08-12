@@ -8,16 +8,14 @@
 
 import Foundation
 
-class ServerInterface {
-    var dataTask: NSURLSessionDataTask?
-    
-    func callRequest() {
+struct ServerInterface {
+    static func callRequest() {
         
         let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
         
         let url = Constants.callURL
         
-        dataTask = defaultSession.dataTaskWithURL(url!) {
+        let dataTask = defaultSession.dataTaskWithURL(url!) {
             data, response, error in
             
             if let error = error {
@@ -30,15 +28,15 @@ class ServerInterface {
             }
         }
         
-        dataTask?.resume()
+        dataTask.resume()
     }
     
-    func textRequest() {
+    static func textRequest() {
         let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
         
         let url = Constants.textURL
         
-        dataTask = defaultSession.dataTaskWithURL(url!) {
+        let dataTask = defaultSession.dataTaskWithURL(url!) {
             data, response, error in
             
             if let error = error {
@@ -51,6 +49,6 @@ class ServerInterface {
             }
         }
         
-        dataTask?.resume()
+        dataTask.resume()
     }
 }

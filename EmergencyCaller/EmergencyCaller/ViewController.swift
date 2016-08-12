@@ -24,9 +24,11 @@ class ViewController: UIViewController {
     
     // MARK: IBAction Methods
     @IBAction func callPressed(sender: UIButton) {
+        ServerInterface.callRequest()
     }
     
     @IBAction func textPressed(sender: UIButton) {
+        ServerInterface.textRequest()
     }
 }
 
