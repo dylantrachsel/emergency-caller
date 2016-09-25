@@ -70,11 +70,85 @@
                     <connections>
                         <outlet property="callButton" destination="hlv-gN-37Y" id="Mmg-yu-lmk"/>
                         <outlet property="textButton" destination="jlj-Eq-uQf" id="5Gi-Y0-gBa"/>
+                        <segue destination="Q0w-65-W8s" kind="show" identifier="CallSegue" id="i23-Gx-0nT"/>
+                        <segue destination="uvU-dp-oxp" kind="show" identifier="TextSegue" id="qq8-oe-ErA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="446.5" y="344.5"/>
+            <point key="canvasLocation" x="489" y="356"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="oTC-Jr-lCp">
+            <objects>
+                <viewController id="uvU-dp-oxp" customClass="TextViewController" customModule="EmergencyCaller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="23m-Z1-tGH"/>
+                        <viewControllerLayoutGuide type="bottom" id="KZ9-m9-gAL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eIC-tR-7I4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw4-Ht-BBi">
+                                <rect key="frame" x="144" y="212" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ejf-n1-5UQ">
+                                <rect key="frame" x="154" y="222" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGH-UU-l9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489" y="1044"/>
+        </scene>
+        <!--Call View Controller-->
+        <scene sceneID="5D1-zN-Ymz">
+            <objects>
+                <viewController id="Q0w-65-W8s" customClass="CallViewController" customModule="EmergencyCaller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="os7-sZ-K9j"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9G-Fu-tKT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BGS-2G-j5r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-bZ-WMM">
+                                <rect key="frame" x="139" y="238" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5z-Jc-s94">
+                                <rect key="frame" x="88" y="387" width="130" height="43"/>
+                                <state key="normal" title="Record Voice"/>
+                                <connections>
+                                    <action selector="recordPressed:" destination="Q0w-65-W8s" eventType="touchUpInside" id="FXW-GP-nFD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9t-yd-s9U">
+                                <rect key="frame" x="97" y="459" width="126" height="30"/>
+                                <state key="normal" title="Stop recording"/>
+                                <connections>
+                                    <action selector="stopPressed:" destination="Q0w-65-W8s" eventType="touchUpInside" id="pUy-2c-AnR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y74-VM-XnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="362"/>
         </scene>
     </scenes>
 </document>
