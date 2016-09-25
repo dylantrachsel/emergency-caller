@@ -16,7 +16,7 @@ class CallViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewDidLoad()
     }
     
-    // MARK: IBActions
+    // MARK: IBAction functions
     @IBAction func recordPressed(sender: AnyObject) {
         
         //init
@@ -63,6 +63,11 @@ class CallViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func stopPressed(sender: AnyObject) {
         self.audioRecorder.stop()
     }
+    
+    @IBAction func nextPressed(sender: UIButton) {
+        performSegueWithIdentifier("callSendSegue", sender: self)
+    }
+    
     
     // MARK: Custom Functions
 

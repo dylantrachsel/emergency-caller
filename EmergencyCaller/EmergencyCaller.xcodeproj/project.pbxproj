@@ -18,6 +18,7 @@
 		869ABD261D5D55BF00783E58 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869ABD251D5D55BF00783E58 /* Constants.swift */; };
 		86AC980F1D8DF5B900A5873E /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC980E1D8DF5B900A5873E /* CallViewController.swift */; };
 		86AC98111D8DF62E00A5873E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC98101D8DF62E00A5873E /* TextViewController.swift */; };
+		86DB910A1D988D0800B9EF9D /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DB91091D988D0800B9EF9D /* SendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		869ABD251D5D55BF00783E58 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		86AC980E1D8DF5B900A5873E /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		86AC98101D8DF62E00A5873E /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		86DB91091D988D0800B9EF9D /* SendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				869ABCF71D5D4C5000783E58 /* ViewController.swift */,
 				86AC980E1D8DF5B900A5873E /* CallViewController.swift */,
 				86AC98101D8DF62E00A5873E /* TextViewController.swift */,
+				86DB91091D988D0800B9EF9D /* SendViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				869ABCF61D5D4C5000783E58 /* AppDelegate.swift in Sources */,
 				86AC980F1D8DF5B900A5873E /* CallViewController.swift in Sources */,
 				869ABD261D5D55BF00783E58 /* Constants.swift in Sources */,
+				86DB910A1D988D0800B9EF9D /* SendViewController.swift in Sources */,
 				86AC98111D8DF62E00A5873E /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
