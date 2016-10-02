@@ -12,6 +12,10 @@ import UIKit
 class SendViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var sendButton: UIButton!
+    var textMessage: String?
+    var fileName: String?
+    var isText: Bool = false
+    var isCall: Bool = false
     
     // MARK: IBAction functions
     @IBAction func sendPressed(sender: UIButton) {

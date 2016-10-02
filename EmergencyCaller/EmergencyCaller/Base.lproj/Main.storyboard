@@ -274,6 +274,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="fileTextField" destination="IRP-wC-eWS" id="GH0-8R-S4J"/>
                         <segue destination="Itq-bd-UDZ" kind="show" identifier="callSendSegue" id="GzX-OB-wAR"/>
                     </connections>
                 </viewController>
@@ -282,6 +283,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ChC-e6-W4K"/>
+        <segue reference="GzX-OB-wAR"/>
     </inferredMetricsTieBreakers>
 </document>
