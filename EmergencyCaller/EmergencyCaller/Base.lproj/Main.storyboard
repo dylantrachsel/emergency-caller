@@ -233,7 +233,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRP-wC-eWS">
-                                <rect key="frame" x="20" y="221" width="280" height="30"/>
+                                <rect key="frame" x="20" y="230" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -241,7 +241,7 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="t3Z-mH-40v" firstAttribute="top" secondItem="IRP-wC-eWS" secondAttribute="bottom" constant="194" id="03I-VR-lK6"/>
-                            <constraint firstItem="t3Z-mH-40v" firstAttribute="top" secondItem="IRP-wC-eWS" secondAttribute="bottom" constant="194" id="0uA-7c-1DD"/>
+                            <constraint firstItem="t3Z-mH-40v" firstAttribute="top" secondItem="IRP-wC-eWS" secondAttribute="bottom" constant="185" id="0uA-7c-1DD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fgs-bZ-WMM" secondAttribute="trailing" id="3Wu-MV-6e8"/>
                             <constraint firstItem="w9G-Fu-tKT" firstAttribute="top" secondItem="t3Z-mH-40v" secondAttribute="bottom" constant="81" id="4Vz-7S-hGz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fgs-bZ-WMM" secondAttribute="trailing" constant="105" id="AI1-oU-mzB"/>
@@ -255,7 +255,7 @@
                             <constraint firstItem="Fgs-bZ-WMM" firstAttribute="top" secondItem="os7-sZ-K9j" secondAttribute="bottom" constant="129" id="Tym-7R-wfI"/>
                             <constraint firstItem="w9G-Fu-tKT" firstAttribute="top" secondItem="t3Z-mH-40v" secondAttribute="bottom" constant="81" id="hqk-iE-4d8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="t3Z-mH-40v" secondAttribute="trailing" constant="89" id="jI3-OA-lLe"/>
-                            <constraint firstItem="IRP-wC-eWS" firstAttribute="top" secondItem="Fgs-bZ-WMM" secondAttribute="bottom" constant="31" id="mxH-ec-OQN"/>
+                            <constraint firstItem="IRP-wC-eWS" firstAttribute="top" secondItem="Fgs-bZ-WMM" secondAttribute="bottom" constant="40" id="mxH-ec-OQN"/>
                             <constraint firstItem="t3Z-mH-40v" firstAttribute="top" secondItem="IRP-wC-eWS" secondAttribute="bottom" constant="194" id="x4K-Sl-EqS"/>
                             <constraint firstItem="IRP-wC-eWS" firstAttribute="leading" secondItem="BGS-2G-j5r" secondAttribute="leadingMargin" id="zzT-Y4-lLP"/>
                         </constraints>
